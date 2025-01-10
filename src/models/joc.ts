@@ -1,6 +1,7 @@
 export class Joc {
-  public players: string[] = ['Alumne 1', 'Alumne 2', 'Alumne 3'];
+  public players: string[] = ['Guillem', 'Manel', 'Louis'];
   public stack: string[] = [];
+  public punts: any[]=[0,0,0];
   public playedCards: string[] = [];
   public currentPlayer: number = 0;
 
@@ -31,3 +32,10 @@ function shuffle(array: string[]) {
       array[randomIndex], array[currentIndex]];
   }
 }
+// for(let i = 0; i < 3; i++) {
+//   // @ts-ignore
+//   if(i == this.game?.currentPlayer) {
+//     // @ts-ignore
+//     this.game?.punts[i]+this.game?.currentCard;
+//   }
+// }

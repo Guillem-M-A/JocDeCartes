@@ -11,6 +11,8 @@ export class JugadorComponent {
 
   @Input() name: any;
   @Input() posicio: any;
+  @Input() punts: any;
+
 
   constructor() {}
 }

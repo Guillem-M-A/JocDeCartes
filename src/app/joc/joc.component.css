@@ -56,12 +56,13 @@
   right: 0;
 }
 
+
 .start-label-box {
   position: absolute;
-  left: 0px;
-  right: 0px;
   bottom: 100px;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   justify-content: center;
 
   img {

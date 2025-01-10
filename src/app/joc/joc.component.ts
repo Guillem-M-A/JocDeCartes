@@ -19,6 +19,7 @@ export class JocComponent implements OnInit {
   pickCardAnimation = false;
   currentCard: string | undefined | any = '';
   game: Joc | undefined;
+  mostrarCart: any;
 
   constructor() {}
 
@@ -36,6 +37,9 @@ export class JocComponent implements OnInit {
       this.currentCard = this.game?.stack.pop();
       this.pickCardAnimation = true;
 
+
+
+
       setTimeout(()=> {
         this.game?.playedCards.push(this.currentCard);
         this.pickCardAnimation = false;
@@ -43,5 +47,18 @@ export class JocComponent implements OnInit {
     }
   }
 
+  // canviartorn(){
+  //   // @ts-ignore
+  //   this.game?.currentPlayer++ ;
+  //   console.log(this.game?.currentPlayer);
+  // }
 
+  // punts(){
+  //   this.
+  // }
+
+
+  mostrarCarta() {
+    this.mostrarCart = this.currentCard;
+  }
 }
